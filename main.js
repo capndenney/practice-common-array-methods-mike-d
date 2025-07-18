@@ -29,3 +29,12 @@ for (let i = 0; i < orders[0].length; i++) {
 //Task 6  The terminology for what you're looking for here was very confusing to me. 
 orders[0].push("Flat White");
 console.log(`There are ${orders[0].length} drink orders`);
+
+let drinksIndex = 0;
+let searchOrder = "Flat White"
+if (orders[drinksIndex].includes(searchOrder) === false) {
+    console.log(`${searchOrder} is not in the list`);
+} else {
+let orderFinder = orders[0].indexOf(searchOrder); 
+console.log(orders[drinksIndex][orderFinder]);
+}
